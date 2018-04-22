@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.yys.telecomrobot.catface.SignView
+        android:id="@+id/sv"
+        android:layout_width="1000dp"
+        android:layout_height="430dp"
+        android:layout_marginTop="170dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <View
+        android:background="@drawable/shape_sign_bg"
+        android:layout_width="1000dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:layout_height="430dp"/>
+
+
+    <TextView
+        android:layout_marginTop="330dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="请在此处签名"
+        android:textColor="#3000"
+        android:textSize="100sp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_resign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_bt_no"
+            android:paddingBottom="14dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="14dp"
+            android:text="重签"
+            android:textColor="#fff"
+            android:textSize="26sp"/>
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/selector_bt_ok"
+            android:paddingBottom="14dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="14dp"
+            android:text="提交"
+            android:textColor="#fff"
+            android:textSize="26sp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

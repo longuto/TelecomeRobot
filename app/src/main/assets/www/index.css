@@ -1,0 +1,222 @@
+html {
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff
+}
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-bottom: 20px
+}
+
+::after,
+::before {
+    box-sizing: inherit
+}
+
+.fl {
+    float: left
+}
+
+.tc {
+    text-align: center
+}
+
+.fw {
+    font-weight: 700
+}
+
+.fw5 {
+    font-weight: 500
+}
+
+.fn {
+    font-weight: 300
+}
+
+.col1 {
+    color: #173456
+}
+
+.ov_hi {
+    overflow: hidden
+}
+
+header .header_logo {
+    width: 2.60416667rem;
+    padding-left: .54141414rem;
+    padding-top: .42828283rem
+}
+
+header .header_logo img {
+    width: 100%
+}
+
+header h1 {
+    margin-top: .06464646rem;
+    color: #173456;
+    font-size: 2.5em;
+    font-weight: 500;
+    letter-spacing: .08080808rem
+}
+
+.content {
+    overflow: hidden
+}
+
+.content .order_partion {
+    padding: 0 .390625rem
+}
+
+.content .order_partion .basic_info {
+    width: 100%;
+    margin-top: .37171717rem;
+    overflow: hidden;
+    line-height: .546875rem
+}
+
+.content .basic_info .width50 {
+    width: 50%;
+    padding: .13020833rem;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: left
+}
+
+.content .width50 .w_fixed {
+    padding-left: .390625rem;
+    display: inline-block;
+    padding-right: .13020833rem
+}
+
+.content .order_time_word {
+    font-size: 20px
+}
+
+.content .basic_info .line1 {
+    border-bottom: 4px solid #173456;
+    margin: 0 .33131313rem
+}
+
+.content .basic_info .line2 {
+    margin: 0 .33131313rem;
+    margin-top: 1px;
+    border-bottom: 1px solid #173456
+}
+
+.content .order_partion .line3 {
+    margin: 0 .390625rem;
+    border-bottom: 2px solid #173456
+}
+
+.content .login_info {
+    line-height: .546875rem
+}
+
+.content .login_info .lg_title {
+    font-size: 18px;
+    padding: .13020833rem;
+    text-align: left;
+    text-indent: .26041667rem
+}
+
+.content .login_info .login_content {
+    text-align: left;
+    padding: .13020833rem;
+    box-sizing: border-box;
+    flex-wrap: inherit
+}
+
+.content .fx div {
+    display: inline;
+    margin-right: 5em
+}
+
+.content .login_content .c1 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: .26041667rem
+}
+
+.content .login_content .c2 {
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: .52083333rem
+}
+
+.content .login_content .c3 {
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: .78125rem
+}
+
+.content .login_content .c4 {
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: .78125rem;
+    padding-right: .78125rem
+}
+
+.content .login_content td {
+    width: 50%;
+    vertical-align: top
+}
+
+.signature {
+    width: 100%;
+    position: relative;
+    height: 2.60416667rem;
+    padding: 20px 0;
+}
+
+.signature img {
+    position: absolute;
+    width: 2.60416667rem;
+    right: 2.60416667rem
+}
+
+footer {
+    padding: 0 .45656566rem;
+    margin-top: 30px;
+    font-size: 14px
+}
+
+footer .line {
+    border-top: 2px solid #173456;
+    padding-top: .16161616rem;
+    display: flex;
+    display: -webkit-flex
+}
+
+footer .line .footer_logo {
+    width: 20%
+}
+
+footer .footer_logo img {
+    width: 100%
+}
+
+footer .line > div {
+    position: relative
+}
+
+footer .line > div div {
+    position: absolute;
+    bottom: .0969697rem;
+    width: 100%;
+    right: .26041667rem
+}
+
+footer .line .right_word {
+    width: 25%
+}
+
+footer .line .center_word {
+    width: 50%
+}

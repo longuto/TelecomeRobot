@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>中国电信</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <script>
+    ! function(a, b) {
+        function c() {
+            var b = f.getBoundingClientRect().width;
+            b / i > 540 && (b = 540 * i);
+            var c = b / 10;
+            f.style.fontSize = c + "px", k.rem = a.rem = c
+        }
+        var d, e = a.document,
+            f = e.documentElement,
+            g = e.querySelector('meta[name="viewport"]'),
+            h = e.querySelector('meta[name="flexible"]'),
+            i = 0,
+            j = 0,
+            k = b.flexible || (b.flexible = {});
+        if (g) {
+            console.warn("将根据已有的meta标签来设置缩放比例");
+            var l = g.getAttribute("content").match(/initial\-scale=([\d\.]+)/);
+            l && (j = parseFloat(l[1]), i = parseInt(1 / j))
+        } else if (h) {
+            var m = h.getAttribute("content");
+            if (m) {
+                var n = m.match(/initial\-dpr=([\d\.]+)/),
+                    o = m.match(/maximum\-dpr=([\d\.]+)/);
+                n && (i = parseFloat(n[1]), j = parseFloat((1 / i).toFixed(2))), o && (i = parseFloat(o[1]), j = parseFloat((1 / i).toFixed(2)))
+            }
+        }
+        if (!i && !j) {
+            var p = (a.navigator.appVersion.match(/android/gi), a.navigator.appVersion.match(/iphone/gi)),
+                q = a.devicePixelRatio;
+            i = p ? q >= 3 && (!i || i >= 3) ? 3 : q >= 2 && (!i || i >= 2) ? 2 : 1 : 1, j = 1 / i
+        }
+        if (f.setAttribute("data-dpr", i), !g)
+            if (g = e.createElement("meta"), g.setAttribute("name", "viewport"), g.setAttribute("content", "initial-scale=" + j + ", maximum-scale=" + j + ", minimum-scale=" + j + ", user-scalable=no"), f.firstElementChild) f.firstElementChild.appendChild(g);
+            else {
+                var r = e.createElement("div");
+                r.appendChild(g), e.write(r.innerHTML)
+            }
+        a.addEventListener("resize", function() { clearTimeout(d), d = setTimeout(c, 300) }, !1), a.addEventListener("pageshow", function(a) { a.persisted && (clearTimeout(d), d = setTimeout(c, 300)) }, !1), "complete" === e.readyState ? e.body.style.fontSize = 12 * i + "px" : e.addEventListener("DOMContentLoaded", function() { e.body.style.fontSize = 12 * i + "px" }, !1), c(), k.dpr = a.dpr = i, k.refreshRem = c, k.rem2px = function(a) { var b = parseFloat(a) * this.rem; return "string" == typeof a && a.match(/rem$/) && (b += "px"), b }, k.px2rem = function(a) { var b = parseFloat(a) / this.rem; return "string" == typeof a && a.match(/px$/) && (b += "rem"), b }
+    }(window, window.lib || (window.lib = {}));
+    </script>
+</head>
+
+<body>
+    <header id="app_header">
+        <div class="header_logo">
+            <img src="./images/logo.png">
+        </div>
+        <h1>中国电信股份有限公司嘉兴分公司客户登记单</h1>
+    </header>
+    <div class="content" id="content">
+        <section class="order_partion" id="order_partion">
+            <div class="basic_info">
+                <div class="ov_hi">
+                    <div class="width50 fl fw">
+                        <div><span class="w_fixed col1 order_time_word">订单号</span><span class="fn orderid"></span></div>
+                    </div>
+                    <div class="width50 fl fw">
+                        <div><span class="w_fixed col1 order_time_word">受理时间</span><span class="fn acceptdate"></span></div>
+                    </div>
+                </div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="width50 fl fw">
+                    <div class="fw5">
+                        <span class="w_fixed">客户名称:</span>
+                        <span class="fn username"></span>
+                    </div>
+                </div>
+                <div class="width50 fl fw">
+                    <div class="fw5">
+                        <span class="w_fixed">联系电话:</span>
+                        <span class="fn telephone"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="line3"></div>
+            <div class="login_info">
+                <div class="lg_title fw">登记信息：</div>
+                <div class="login_content">
+                    <div class="c1">一 、【 订购 】不限量 99— 主套餐套餐及叠加包</div>
+                    <div class="c2">套餐(竣工生效 ,有效期为11年 ,自动延续)</div>
+                    <div class="c3">1、用户号码：</div>
+                    <div class="c4">天翼手机号码：<span class="newtelephone"></span>（新开户）（主号），密码：<span class="password"></span></div>
+                    <div class="c3">2、套餐月基本费：99元，包含</div>
+                    <div class="c4">
+                        <div class="fx">
+                            <div>手机上网流量（省内）：免费</div>
+                            <div>免费接听范围：国内</div>
+                            <div>国内流量1GB，国内流量超出1GB按照按0，不足1分钱的按1分钱计收。</div>
+                            <div>省内流量无限量使用。</div>
+                            <div>每月流量前40GB提供4G网速，为保障所有用户网络公平使用权率将降至3G网络速度，当月流量累计达到100GB后，上网速度将降速至2G网络速度，次月恢复4G网速。</div>
+                        </div>
+                    </div>
+                    <div class="c3">3、套餐赠送信息：</div>
+                    <div class="c4">赠送:来电显示、189免费邮箱</div>
+                    <div class="c3">4、套餐超出资费：</div>
+                    <div class="c4">国内通话:0.15元/分钟,国内短信、彩信:0.1元/条,国内流量按照按0.0001元/KB收费，流量最小计费单元为KB,不足1KB部分按1KB计，不足1分钱的按1分钱计收,其他按标准资费执行（标准资费请参见中国电信网上营业厅等相关公告）。
+                    </div>
+                    <div class="c3">5、订购当月/激活资费：</div>
+                    <div class="c4">1)仅限新用户，新用户订购立即生效，首月执行过渡期资费。过渡期资费:订购当月套餐月基本费按日折算（入网当日到月底），费用四舍五入到分；套餐内容按照40G按天折算，向上取整。2)变更、退订: 次月生效。
+                    </div>
+                    <div class="c3">6、其它说明：</div>
+                    <div class="c4">套餐中的“国内”指中国内地，不含港澳台地区。（下同）
+                        <br>套餐内包含的、以及赠送的国内通信费不含信息费等代收费。（下同）
+                        <br>套餐资费的有效期24个月，到期时中国电信可调整相关资费内容，如双方无异议自动续订24个月。
+                        <br>不允许办理副卡。
+                        <br>不适用于流量不清零规则。
+                        <br>不允许订购流量包。
+                        <br>不限量99套餐可迁转至乐享4G等其他4G套餐（个人定制套餐除外）</div>
+                    <div class="c2">叠加包：</div>
+                    <div class="c3">1、不限量套餐每月赠送300分钟国内通话时长（竣工生效，有效期至套餐结束）</div>
+                    <div class="c4">天翼手机 用户号码：<span class="newtelephone"></span>;</div>
+                    <div class="c4">其它说明：</div>
+                    <div class="c4">不限量99套餐用户，每月赠送300分钟国内通话时长。</div>
+                    <div class="c3">2、产品功能：</div>
+                    <div class="c4">1)[开通]彩信（天翼手机 用户号码：<span class="newtelephone"></span>）</div>
+                    <div class="c4">2)[开通]手机上网（4G/LTE、3G/EVDO、1x）（天翼手机 用户号码：<span class="newtelephone"></span>）</div>
+                    <div class="c4">3)[开通]普通国内长途（天翼手机 用户号码：<span class="newtelephone"></span>）</div>
+                    <div class="c4">4)[开通]来电显示（天翼手机 用户号码：<span class="newtelephone"></span>）</div>
+                    <div class="c4">5)[开通]翼支付账户（天翼手机 用户号码：<span class="newtelephone"></span>）</div>
+                    <div class="c4">6)[开通]国内漫游（天翼手机 用户号码：<span class="newtelephone"></span>）</div>
+                    <div class="c4">7)[开通]WLAN（天翼手机 用户号码：<span class="newtelephone"></span>）</div>
+                    <div class="c4">8)[开通]在线计费标识（天翼手机 用户号码：<span class="newtelephone"></span>）</div>
+                </div>
+            </div>
+        </section>
+        <section class="account_info" id="account_info"></section>
+    </div>
+    <div class="signature">
+        <img src="./images/gz.png" alt="">
+    </div>
+    <footer id="app_footer">
+        <div>
+            <div class="line">
+                <div class="footer_logo"><img src="./images/service.png"></div>
+                <div class="center_word">
+                    <div class="col1">本单以机打为准，手写无效</div>
+                </div>
+                <div class="right_word">
+                    <div class="col1">网上营业厅<span class="url">www.189.cn</span></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./jquery.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

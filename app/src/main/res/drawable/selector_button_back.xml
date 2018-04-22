@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="8dp"/>
+
+            <stroke
+                android:width="1dp"
+                android:color="@color/cancle_press" />
+
+            <!-- 填充 -->
+            <solid
+                android:color="@color/cancle_press"/>
+
+            <!-- 大小 -->
+            <size
+                android:width="120dp"
+                android:height="60dp"/><!-- 宽度和高度 -->
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="8dp"/>
+
+            <stroke
+                android:width="1dp"
+                android:color="@color/cancle_normal" />
+
+            <!-- 填充 -->
+            <solid
+                android:color="@color/cancle_normal"/>
+
+            <!-- 大小 -->
+            <size
+                android:width="120dp"
+                android:height="60dp"/><!-- 宽度和高度 -->
+        </shape>
+    </item>
+</selector>
